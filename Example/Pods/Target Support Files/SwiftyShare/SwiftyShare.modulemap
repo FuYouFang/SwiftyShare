@@ -1,0 +1,6 @@
+framework module SwiftyShare {
+  umbrella header "SwiftyShare-umbrella.h"
+
+  export *
+  module * { export * }
+}

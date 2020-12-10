@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import SwiftyShare
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        // QQ 1111292720 CCikK9AtEcLkwo16
+        
+        SwiftyShareManager.shared.regist(platforms: [.Wechat(appid: "", universalLink: "")])
+        
+//        SwiftyShareManager.shared.share()
+        
+        debugPrint(NSNotification.Name.UITextViewTextDidBeginEditing)
+        
+        
+        if SwiftyShareManager.shared.isInstalled(platform: .Wechat(appid: "", universalLink: "")) {
+            
+        } else {
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

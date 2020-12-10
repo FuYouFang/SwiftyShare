@@ -1,0 +1,104 @@
+{
+  "name": "SwiftyShare",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftyShare.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fuyoufang/SwiftyShare",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fuyoufang": "fuyoufang@163.com"
+  },
+  "source": {
+    "git": "https://github.com/fuyoufang/SwiftyShare.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_versions": "5.0",
+  "libraries": "sqlite3",
+  "source_files": "SwiftyShare/Classes/*.{h,m,swift}",
+  "subspecs": [
+    {
+      "name": "SwiftyShareCore",
+      "source_files": "SwiftyShare/Classes/*.{h,m,swift}"
+    },
+    {
+      "name": "Extension",
+      "dependencies": {
+        "SwiftyShare/SwiftyShareCore": [
+
+        ]
+      },
+      "source_files": "SwiftyShare/Extension/*.swift"
+    },
+    {
+      "name": "PlatformConnector",
+      "subspecs": [
+        {
+          "name": "Wechat",
+          "source_files": "SwiftyShare/Support/PlatformConnector/Wechat/*.{h,m,swift}"
+        },
+        {
+          "name": "QQ",
+          "source_files": "SwiftyShare/Support/PlatformConnector/QQ/*.{h,m,swift}"
+        }
+      ]
+    },
+    {
+      "name": "Platforms",
+      "subspecs": [
+        {
+          "name": "WeChat",
+          "vendored_libraries": "SwiftyShare/Support/PlatformSDK/WeChat/*.a",
+          "source_files": "SwiftyShare/Support/PlatformSDK/WeChat/*.{h,m}",
+          "public_header_files": "SwiftyShare/Support/PlatformSDK/WeChat/*.h",
+          "libraries": "c++",
+          "dependencies": {
+            "SwiftyShare/SwiftyShareCore": [
+
+            ],
+            "SwiftyShare/PlatformConnector/Wechat": [
+
+            ]
+          },
+          "frameworks": [
+            "Security",
+            "CoreGraphics",
+            "WebKit"
+          ]
+        },
+        {
+          "name": "QQ",
+          "vendored_frameworks": "SwiftyShare/Support/PlatformSDK/QQ/TencentOpenAPI.framework",
+          "libraries": [
+            "sqlite3",
+            "c++",
+            "iconv",
+            "stdc++",
+            "z"
+          ],
+          "dependencies": {
+            "SwiftyShare/SwiftyShareCore": [
+
+            ],
+            "SwiftyShare/PlatformConnector/QQ": [
+
+            ]
+          },
+          "frameworks": [
+            "Security",
+            "CoreGraphics",
+            "WebKit",
+            "SystemConfiguration",
+            "CoreTelephony"
+          ]
+        }
+      ]
+    }
+  ],
+  "swift_version": "5.0"
+}
