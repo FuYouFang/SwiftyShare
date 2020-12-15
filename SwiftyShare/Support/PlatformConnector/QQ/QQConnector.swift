@@ -10,4 +10,7 @@
 
 //class QQConnector: Connector {
 //   
+//    static func register(appid: String, universalLink: String) {
+//        
+//    }
 //}

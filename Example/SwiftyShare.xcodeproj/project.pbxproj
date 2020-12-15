@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		48D155B3186B23EAA337F219 /* Pods_SwiftyShare_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9F66F967E8ADE2FEB12098 /* Pods_SwiftyShare_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* LoginViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A3A33BC2258757B900904859 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A33BC1258757B900904859 /* Security.framework */; };
+		A3A33BC5258757CA00904859 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A33BC4258757CA00904859 /* SystemConfiguration.framework */; };
+		A3A33BC7258757D100904859 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A33BC6258757D100904859 /* CoreGraphics.framework */; };
+		A3A33BC9258757DE00904859 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39372122580DC5B00D7B1D1 /* CoreTelephony.framework */; };
+		A3A33BCD2587581D00904859 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A33BC4258757CA00904859 /* SystemConfiguration.framework */; };
+		A3A33BD32587587400904859 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A33BD22587587400904859 /* WebKit.framework */; };
 		EE6FBA6F3FF2878FCC8971BE /* Pods_SwiftyShare_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9B65E411ACE70B369CAE12 /* Pods_SwiftyShare_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +38,7 @@
 		607FACD01AFB9204008FA782 /* SwiftyShare_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyShare_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -43,6 +49,15 @@
 		9BF558CD3B364B8D839063C5 /* Pods-SwiftyShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyShare_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyShare_Example/Pods-SwiftyShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A39371F82580D71600D7B1D1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A39372122580DC5B00D7B1D1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A3A339D125872C9100904859 /* SwiftyShare_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftyShare_Example.entitlements; sourceTree = "<group>"; };
+		A3A33AEA25874EE100904859 /* SwiftyShare_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyShare_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3A33BC1258757B900904859 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A3A33BC3258757C400904859 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A3A33BC4258757CA00904859 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A3A33BC6258757D100904859 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3A33BC8258757D800904859 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A3A33BCA258757F100904859 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A3A33BD22587587400904859 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CF9F66F967E8ADE2FEB12098 /* Pods_SwiftyShare_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyShare_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C02BCE1533F1947458FF98 /* Pods-SwiftyShare_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyShare_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyShare_Tests/Pods-SwiftyShare_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA9B65E411ACE70B369CAE12 /* Pods_SwiftyShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyShare_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +72,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE6FBA6F3FF2878FCC8971BE /* Pods_SwiftyShare_Example.framework in Frameworks */,
+				A3A33BCD2587581D00904859 /* SystemConfiguration.framework in Frameworks */,
+				A3A33BD32587587400904859 /* WebKit.framework in Frameworks */,
+				A3A33BC2258757B900904859 /* Security.framework in Frameworks */,
+				A3A33BC5258757CA00904859 /* SystemConfiguration.framework in Frameworks */,
+				A3A33BC7258757D100904859 /* CoreGraphics.framework in Frameworks */,
+				A3A33BC9258757DE00904859 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,13 @@
 		476CB3372AA855E3916F3167 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3A33BD22587587400904859 /* WebKit.framework */,
+				A3A33BCA258757F100904859 /* libz.tbd */,
+				A3A33BC8258757D800904859 /* libsqlite3.tbd */,
+				A3A33BC6258757D100904859 /* CoreGraphics.framework */,
+				A3A33BC4258757CA00904859 /* SystemConfiguration.framework */,
+				A3A33BC3258757C400904859 /* libiconv.tbd */,
+				A3A33BC1258757B900904859 /* Security.framework */,
 				A39372122580DC5B00D7B1D1 /* CoreTelephony.framework */,
 				A39371F82580D71600D7B1D1 /* libc++.tbd */,
 				DA9B65E411ACE70B369CAE12 /* Pods_SwiftyShare_Example.framework */,
@@ -96,6 +124,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				A3A339D125872C9100904859 /* SwiftyShare_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SwiftyShare */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -118,11 +147,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* LoginViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				A3A33AEA25874EE100904859 /* SwiftyShare_Example-Bridging-Header.h */,
 			);
 			name = "Example for SwiftyShare";
 			path = SwiftyShare;
@@ -174,7 +204,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				14604C79B98CE762E4EE6B55 /* [CP] Embed Pods Frameworks */,
+				673AAAF4015E98E40432F525 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,12 +247,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 5D5H679LK6;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = RQJ86FHSR9;
+						LastSwiftMigration = 1220;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 5D5H679LK6;
+						DevelopmentTeam = RQJ86FHSR9;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -236,6 +267,7 @@
 				English,
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -291,24 +323,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyShare_Tests/Pods-SwiftyShare_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		14604C79B98CE762E4EE6B55 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftyShare_Example/Pods-SwiftyShare_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyShare/SwiftyShare.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyShare.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyShare_Example/Pods-SwiftyShare_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1F98289B5CE38F3E8FF51E4C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,6 +343,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		673AAAF4015E98E40432F525 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyShare_Example/Pods-SwiftyShare_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyShare/SwiftyShare.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyShare.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyShare_Example/Pods-SwiftyShare_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6CEB5E1D4449B67578413230 /* [CP] Check Pods Manifest.lock */ = {
@@ -360,7 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* LoginViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,12 +539,24 @@
 			baseConfigurationReference = 9BF558CD3B364B8D839063C5 /* Pods-SwiftyShare_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5D5H679LK6;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftyShare_Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQJ86FHSR9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftyShare",
+				);
 				INFOPLIST_FILE = SwiftyShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.SwiftyShare;
+				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fuyoufang.SwiftyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyShare/SwiftyShare_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -523,12 +567,23 @@
 			baseConfigurationReference = EB3542414FF65062CE46E9F2 /* Pods-SwiftyShare_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5D5H679LK6;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftyShare_Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQJ86FHSR9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftyShare",
+				);
 				INFOPLIST_FILE = SwiftyShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.SwiftyShare;
+				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fuyoufang.SwiftyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyShare/SwiftyShare_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -538,7 +593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7C02BCE1533F1947458FF98 /* Pods-SwiftyShare_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5D5H679LK6;
+				DEVELOPMENT_TEAM = RQJ86FHSR9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -561,7 +616,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE059F7FD50AC0C4382996B0 /* Pods-SwiftyShare_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5D5H679LK6;
+				DEVELOPMENT_TEAM = RQJ86FHSR9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

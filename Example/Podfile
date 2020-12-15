@@ -7,8 +7,7 @@ target 'SwiftyShare_Example' do
   
   pod 'SwiftyShare', :path => '../'
   pod 'SwiftyShare/Extension', :path => '../'
-#  pod 'SwiftyShare/Platforms/QQ', :path => '../'
-  pod 'SwiftyShare/Platforms/WeChat', :path => '../'
+#  pod 'SwiftyShare/Platforms/WeChat', :path => '../'
 #  pod 'SwiftyShare/Platforms/WeChat_NoPay', :path => '../'
   pod 'SwiftyShare/Platforms/QQ', :path => '../'
 

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SShareQQConnector+Extension.h"
 #import "SShareQQConnector.h"
 #import "WechatAuthSDK.h"
 #import "WXApi.h"

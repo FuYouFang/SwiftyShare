@@ -10,7 +10,7 @@ import Foundation
 //import libWeChatSDK
 //#endif
 
-public class WechatConnector: Connector {
+public class WechatConnector: WechatConnectorType {
     
     static func register(appid: String, universalLink: String) {
         if WXApi.registerApp(appid, universalLink: universalLink) {

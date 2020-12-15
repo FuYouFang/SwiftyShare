@@ -29,7 +29,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^SShareQQAuthorizeSuccess)(NSString * token);
+typedef void (^SShareQQAuthorizeFailure)(void);
+
+
 @interface SShareQQConnector : NSObject
+
+- (void)regist:(NSString *)appId enableUniveralLink:(BOOL)enabled universalLink:(NSString *)universalLink;
+
+- (void)authorize:(NSArray<NSString *> *)permissions
+success:(SShareQQAuthorizeSuccess)success
+failure:(SShareQQAuthorizeFailure)failure;
+
+- (BOOL)handleOpenURL:(NSURL *)url;
+
 
 @end
 

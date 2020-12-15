@@ -9,20 +9,21 @@ import Foundation
 
 /// 平台类型
 public enum RegistPlatform {
-    // 新浪微博
-    case SinaWeibo
+    // QQ
+    case QQ(appid: String, enableUniveralLink: Bool, universalLink: String)
     // 微信平台
     case Wechat(appid: String, universalLink: String)
-    // QQ
-    case QQ
+    // 新浪微博
+    case SinaWeibo
 }
-
 
 extension RegistPlatform {
     var connector: String {
         switch self {
         case .Wechat:
             return "WechatConnector"
+        case .QQ:
+            return "SShareQQConnector"
         default:
             return ""
         }
